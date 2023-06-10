@@ -41,15 +41,8 @@ class Program
         foreach (int newL in newList){
                     if(newL<smallest){
                         smallest= newL;
-                    }
-                
+                    }               
             };
-
-       
-
-        
-        
-
         Console.WriteLine($"The sum is: {sum}.");
         Console.WriteLine($"The average is: {average}.");
         Console.WriteLine($"The max is: {max}.");
@@ -61,14 +54,7 @@ class Program
         Console.WriteLine("the sorted list is: ");
         foreach (int sort in sortedList){
            
-            Console.WriteLine(sort);
-
-            
+            Console.WriteLine(sort);            
         }
-       
-        
-
-
-
     }
 }
