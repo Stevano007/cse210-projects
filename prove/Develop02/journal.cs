@@ -1,6 +1,7 @@
 using System.IO;
 public class Journal{
-    List<string> _entries= new List<string>();
+    Entry entry1= new Entry();
+
     public void Run(){
         Display();
         double _response= Convert.ToDouble(Console.ReadLine());
@@ -53,13 +54,16 @@ public class Journal{
     DateTime theCurrentTime = DateTime.Now;
     string dateText = theCurrentTime.ToShortDateString();
     string _writeresponse= $"Date:{dateText}  Prompt: {_prompt} Response: {_response}";
-    _entries.Add(_writeresponse);
+    
+    entry1._entries.Add(_writeresponse);
+    
+
     
 
    }
    public void DisplayAll(){
        Console.WriteLine("Displaying all entries.....");
-       foreach(string entry in _entries){
+       foreach(string entry in entry1._entries){
            
            Console.WriteLine(entry);
        }
@@ -70,7 +74,7 @@ public class Journal{
        Console.WriteLine("What would you like to name your file?(.txt)");
        string _filename= Console.ReadLine();
        using(StreamWriter file= new StreamWriter(_filename)){
-           foreach(string e in _entries){
+           foreach(string e in entry1._entries){
                file.WriteLine(e);
            }
            Console.WriteLine("File saved!!");
