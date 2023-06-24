@@ -1,5 +1,5 @@
 public class Prompter{
-    List<string> _prompter;
+    public List<string> _prompter;
     public Prompter(){
         _prompter= new List<string>{
             "What significant step did i take today?",
