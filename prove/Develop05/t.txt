@@ -1,0 +1,3 @@
+SimpleGoal, Push,pushing P,5,True
+EternalGoal, Pulling,pulling strings,5
+ CheckListGoal, Pausing,pausing the noise,5,100,3,2
