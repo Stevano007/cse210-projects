@@ -8,7 +8,7 @@ class Program
        Address customer2Address = new Address("Omojuwa Estate", "Lagos", "Lagos State", "Nigeria");
 
 
-        // Create customer
+        // Create customers
         Customer customer1 = new Customer("Mark Angel", customer1Address);
         Customer customer2 = new Customer("Samuel", customer2Address);
 
@@ -21,7 +21,7 @@ class Program
         Products product6 = new Products("Tissue Paper", 1129, 3.00, 1);
         
         List<Order> orders = new List<Order>();
-
+      // Create Orders
         Order order1 = new Order(customer1);
         order1.AddProduct(product3);
         order1.AddProduct(product2);
